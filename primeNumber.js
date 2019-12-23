@@ -1,12 +1,11 @@
-    // get input from user
-    var getNumber = prompt('Enter Number (Check Prime Number)');
-
-    // try to divide givin number from 2 
-    let primeNumber = getNumber % 2;
-    // check if number got divided
-
-    if (primeNumber == 0) {
-        alert('not a Prime Number');
-    } else {
-        alert('Prime Number')
+for (var counter = 0; counter <= 100; counter++) {
+    var notPrime = false;
+    for (var i = 2; i <= counter; i++) {
+        if (counter%i===0 && i!==counter) {
+            notPrime = true;
+        }
     }
+    if (notPrime === false) {
+       console.log(counter);
+    }
+}
